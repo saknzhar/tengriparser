@@ -1,0 +1,26 @@
+﻿@page
+@model lastfinal.Pages.Articles.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Movie</h4>
+<hr />
+<form method="post">
+    <div>
+        <label for="LinqToArticle"></label>
+        <input type="text" name="LinqToArticle" value="" />
+    </div>
+    <div>
+        <label>&nbsp;</label>
+        <input type="submit" value="Create" class="submit" />
+    </div>
+
+</form>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+

@@ -1,0 +1,22 @@
+﻿@page
+@model lastfinal.Pages.NewsModel
+@{
+    ViewData["Title"] = "News";
+}
+<h1>News</h1>
+
+<table class="table-sm table-responsive-sm table-bordered">
+    <tbody>
+        @foreach (var item in Model.News)
+        {
+            <tr>
+                <a asp-page="./Details" asp-route-id="@item.ArticleId">
+                    @Html.DisplayFor(modelItem => item.Title)
+                </a>
+            </tr>
+            <br>
+        }
+        
+    </tbody>
+</table>
+

@@ -1,0 +1,15 @@
+﻿@page "{id:int}"
+@model lastfinal.Pages.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div>
+    <hr />
+    <h1>@Model.News.Title</h1>
+    <div>@Html.Raw(Model.MyHtmlNode.OuterHtml).</div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
